@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct WBSeniorApp: App {
+    @StateObject private var viewModel = CustomNavigationStackViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ExperimentView()
+                .environmentObject(viewModel)
         }
     }
 }
