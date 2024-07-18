@@ -11,7 +11,7 @@ import SwiftUI
 struct WBSeniorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OTPVerificationView("+7 (098) 545-34-34")
         }
     }
 }
