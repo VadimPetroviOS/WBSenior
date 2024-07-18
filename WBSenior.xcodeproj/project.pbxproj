@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		7D21968A2C44E4440028B8FA /* WBSeniorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2196892C44E4440028B8FA /* WBSeniorApp.swift */; };
-		7D21968C2C44E4440028B8FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D21968B2C44E4440028B8FA /* ContentView.swift */; };
+		7D21968C2C44E4440028B8FA /* PhoneAuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D21968B2C44E4440028B8FA /* PhoneAuthorizationView.swift */; };
 		7D21968E2C44E44A0028B8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D21968D2C44E44A0028B8FA /* Assets.xcassets */; };
 		7D2196912C44E44A0028B8FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2196902C44E44A0028B8FA /* Preview Assets.xcassets */; };
+		7D45E86D2C48F275003496E3 /* PhoneAuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D45E86C2C48F275003496E3 /* PhoneAuthorizationViewModel.swift */; };
+		7D45E8702C48F29E003496E3 /* PhoneAuthorizationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D45E86F2C48F29E003496E3 /* PhoneAuthorizationProtocol.swift */; };
+		7D45E8732C48F40D003496E3 /* Utils in Frameworks */ = {isa = PBXBuildFile; productRef = 7D45E8722C48F40D003496E3 /* Utils */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D2196862C44E4440028B8FA /* WBSenior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBSenior.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2196892C44E4440028B8FA /* WBSeniorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBSeniorApp.swift; sourceTree = "<group>"; };
-		7D21968B2C44E4440028B8FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7D21968B2C44E4440028B8FA /* PhoneAuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthorizationView.swift; sourceTree = "<group>"; };
 		7D21968D2C44E44A0028B8FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D2196902C44E44A0028B8FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D45E8682C48F1A0003496E3 /* Utils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utils; sourceTree = "<group>"; };
+		7D45E86C2C48F275003496E3 /* PhoneAuthorizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthorizationViewModel.swift; sourceTree = "<group>"; };
+		7D45E86F2C48F29E003496E3 /* PhoneAuthorizationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthorizationProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D45E8732C48F40D003496E3 /* Utils in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +42,10 @@
 		7D21967D2C44E4440028B8FA = {
 			isa = PBXGroup;
 			children = (
+				7D45E8692C48F1A8003496E3 /* Packages */,
 				7D2196882C44E4440028B8FA /* WBSenior */,
 				7D2196872C44E4440028B8FA /* Products */,
+				7D45E8712C48F40D003496E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				7D2196892C44E4440028B8FA /* WBSeniorApp.swift */,
-				7D21968B2C44E4440028B8FA /* ContentView.swift */,
+				7D45E86A2C48F251003496E3 /* PhoneAuthorization */,
 				7D21968D2C44E44A0028B8FA /* Assets.xcassets */,
 				7D21968F2C44E44A0028B8FA /* Preview Content */,
 			);
@@ -65,6 +74,47 @@
 				7D2196902C44E44A0028B8FA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7D45E8692C48F1A8003496E3 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				7D45E8682C48F1A0003496E3 /* Utils */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		7D45E86A2C48F251003496E3 /* PhoneAuthorization */ = {
+			isa = PBXGroup;
+			children = (
+				7D45E86B2C48F263003496E3 /* View */,
+				7D45E86E2C48F27A003496E3 /* ViewModel */,
+			);
+			path = PhoneAuthorization;
+			sourceTree = "<group>";
+		};
+		7D45E86B2C48F263003496E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D21968B2C44E4440028B8FA /* PhoneAuthorizationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D45E86E2C48F27A003496E3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7D45E86C2C48F275003496E3 /* PhoneAuthorizationViewModel.swift */,
+				7D45E86F2C48F29E003496E3 /* PhoneAuthorizationProtocol.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7D45E8712C48F40D003496E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +133,9 @@
 			dependencies = (
 			);
 			name = WBSenior;
+			packageProductDependencies = (
+				7D45E8722C48F40D003496E3 /* Utils */,
+			);
 			productName = WBSenior;
 			productReference = 7D2196862C44E4440028B8FA /* WBSenior.app */;
 			productType = "com.apple.product-type.application";
@@ -137,8 +190,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D21968C2C44E4440028B8FA /* ContentView.swift in Sources */,
+				7D45E8702C48F29E003496E3 /* PhoneAuthorizationProtocol.swift in Sources */,
+				7D21968C2C44E4440028B8FA /* PhoneAuthorizationView.swift in Sources */,
 				7D21968A2C44E4440028B8FA /* WBSeniorApp.swift in Sources */,
+				7D45E86D2C48F275003496E3 /* PhoneAuthorizationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +399,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D45E8722C48F40D003496E3 /* Utils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Utils;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D21967E2C44E4440028B8FA /* Project object */;
 }
