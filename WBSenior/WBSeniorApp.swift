@@ -11,7 +11,7 @@ import SwiftUI
 struct WBSeniorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CalculatorView()
         }
     }
 }
