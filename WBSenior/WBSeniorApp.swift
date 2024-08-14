@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct WBSeniorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StatisticView(
+                store: Store(
+                    initialState: StatisticReducer.State(),
+                    reducer: { StatisticReducer() }
+                )
+            )
         }
     }
 }
