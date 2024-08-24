@@ -11,6 +11,20 @@
 		7D21968C2C44E4440028B8FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D21968B2C44E4440028B8FA /* ContentView.swift */; };
 		7D21968E2C44E44A0028B8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D21968D2C44E44A0028B8FA /* Assets.xcassets */; };
 		7D2196912C44E44A0028B8FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2196902C44E44A0028B8FA /* Preview Assets.xcassets */; };
+		7D9353702C7752C7009A34FC /* Аватарка профиля.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D93536A2C7752C6009A34FC /* Аватарка профиля.pdf */; };
+		7D9353712C7752C7009A34FC /* calendar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D93536B2C7752C6009A34FC /* calendar.pdf */; };
+		7D9353722C7752C7009A34FC /* settings.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D93536C2C7752C6009A34FC /* settings.pdf */; };
+		7D9353732C7752C7009A34FC /* hot.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D93536D2C7752C7009A34FC /* hot.pdf */; };
+		7D9353742C7752C7009A34FC /* graph.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D93536E2C7752C7009A34FC /* graph.pdf */; };
+		7D9353752C7752C7009A34FC /* chat.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D93536F2C7752C7009A34FC /* chat.pdf */; };
+		7D9353782C77582D009A34FC /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 7D9353772C77582D009A34FC /* ComposableArchitecture */; };
+		7D93537E2C787092009A34FC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93537D2C787092009A34FC /* MainView.swift */; };
+		7D9353832C7876BE009A34FC /* Utils in Frameworks */ = {isa = PBXBuildFile; productRef = 7D9353822C7876BE009A34FC /* Utils */; };
+		7D9353872C79F0B4009A34FC /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9353862C79F0B4009A34FC /* MainReducer.swift */; };
+		7D93538D2C79F248009A34FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93538C2C79F248009A34FC /* Constants.swift */; };
+		7D9353902C79F72F009A34FC /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93538F2C79F72F009A34FC /* MainModel.swift */; };
+		7D9353922C79F7E6009A34FC /* MarketingSpecialistData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9353912C79F7E6009A34FC /* MarketingSpecialistData.swift */; };
+		7DC5CE362C6DAEC1008F06A6 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC5CE352C6DAEC1008F06A6 /* StatisticView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +33,19 @@
 		7D21968B2C44E4440028B8FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D21968D2C44E44A0028B8FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D2196902C44E44A0028B8FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D93536A2C7752C6009A34FC /* Аватарка профиля.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Аватарка профиля.pdf"; path = "../../../../Новая папка/Аватарка профиля.pdf"; sourceTree = "<group>"; };
+		7D93536B2C7752C6009A34FC /* calendar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = calendar.pdf; path = "../../../../Новая папка/calendar.pdf"; sourceTree = "<group>"; };
+		7D93536C2C7752C6009A34FC /* settings.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = settings.pdf; path = "../../../../Новая папка/settings.pdf"; sourceTree = "<group>"; };
+		7D93536D2C7752C7009A34FC /* hot.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = hot.pdf; path = "../../../../Новая папка/hot.pdf"; sourceTree = "<group>"; };
+		7D93536E2C7752C7009A34FC /* graph.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = graph.pdf; path = "../../../../Новая папка/graph.pdf"; sourceTree = "<group>"; };
+		7D93536F2C7752C7009A34FC /* chat.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = chat.pdf; path = "../../../../Новая папка/chat.pdf"; sourceTree = "<group>"; };
+		7D93537D2C787092009A34FC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7D93537F2C78743B009A34FC /* Utils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Utils; path = Package/Utils; sourceTree = SOURCE_ROOT; };
+		7D9353862C79F0B4009A34FC /* MainReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReducer.swift; sourceTree = "<group>"; };
+		7D93538C2C79F248009A34FC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7D93538F2C79F72F009A34FC /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		7D9353912C79F7E6009A34FC /* MarketingSpecialistData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketingSpecialistData.swift; sourceTree = "<group>"; };
+		7DC5CE352C6DAEC1008F06A6 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D9353832C7876BE009A34FC /* Utils in Frameworks */,
+				7D9353782C77582D009A34FC /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +64,10 @@
 		7D21967D2C44E4440028B8FA = {
 			isa = PBXGroup;
 			children = (
+				7D9353802C787459009A34FC /* Package */,
 				7D2196882C44E4440028B8FA /* WBSenior */,
 				7D2196872C44E4440028B8FA /* Products */,
+				7D9353812C7876BE009A34FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +84,8 @@
 			children = (
 				7D2196892C44E4440028B8FA /* WBSeniorApp.swift */,
 				7D21968B2C44E4440028B8FA /* ContentView.swift */,
+				7D93538A2C79F209009A34FC /* Features */,
+				7D93538B2C79F21C009A34FC /* Helpers */,
 				7D21968D2C44E44A0028B8FA /* Assets.xcassets */,
 				7D21968F2C44E44A0028B8FA /* Preview Content */,
 			);
@@ -62,9 +95,98 @@
 		7D21968F2C44E44A0028B8FA /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				7D93536A2C7752C6009A34FC /* Аватарка профиля.pdf */,
+				7D93536B2C7752C6009A34FC /* calendar.pdf */,
+				7D93536F2C7752C7009A34FC /* chat.pdf */,
+				7D93536E2C7752C7009A34FC /* graph.pdf */,
+				7D93536D2C7752C7009A34FC /* hot.pdf */,
+				7D93536C2C7752C6009A34FC /* settings.pdf */,
 				7D2196902C44E44A0028B8FA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7D9353802C787459009A34FC /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				7D93537F2C78743B009A34FC /* Utils */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		7D9353812C7876BE009A34FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D9353842C79F07E009A34FC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7D9353932C79F9FC009A34FC /* Networking */,
+				7D9353892C79F0F2009A34FC /* View */,
+				7D9353882C79F0E8009A34FC /* Store */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7D9353852C79F08C009A34FC /* Statistic */ = {
+			isa = PBXGroup;
+			children = (
+				7D93538E2C79F271009A34FC /* View */,
+			);
+			path = Statistic;
+			sourceTree = "<group>";
+		};
+		7D9353882C79F0E8009A34FC /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				7D9353862C79F0B4009A34FC /* MainReducer.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		7D9353892C79F0F2009A34FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D93537D2C787092009A34FC /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D93538A2C79F209009A34FC /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				7D9353842C79F07E009A34FC /* Main */,
+				7D9353852C79F08C009A34FC /* Statistic */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		7D93538B2C79F21C009A34FC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7D93538C2C79F248009A34FC /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7D93538E2C79F271009A34FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7DC5CE352C6DAEC1008F06A6 /* StatisticView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D9353932C79F9FC009A34FC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7D9353912C79F7E6009A34FC /* MarketingSpecialistData.swift */,
+				7D93538F2C79F72F009A34FC /* MainModel.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +205,10 @@
 			dependencies = (
 			);
 			name = WBSenior;
+			packageProductDependencies = (
+				7D9353772C77582D009A34FC /* ComposableArchitecture */,
+				7D9353822C7876BE009A34FC /* Utils */,
+			);
 			productName = WBSenior;
 			productReference = 7D2196862C44E4440028B8FA /* WBSenior.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 7D21967D2C44E4440028B8FA;
+			packageReferences = (
+				7D9353762C77582D009A34FC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 7D2196872C44E4440028B8FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +254,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D9353752C7752C7009A34FC /* chat.pdf in Resources */,
+				7D9353732C7752C7009A34FC /* hot.pdf in Resources */,
 				7D2196912C44E44A0028B8FA /* Preview Assets.xcassets in Resources */,
 				7D21968E2C44E44A0028B8FA /* Assets.xcassets in Resources */,
+				7D9353712C7752C7009A34FC /* calendar.pdf in Resources */,
+				7D9353702C7752C7009A34FC /* Аватарка профиля.pdf in Resources */,
+				7D9353742C7752C7009A34FC /* graph.pdf in Resources */,
+				7D9353722C7752C7009A34FC /* settings.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +273,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D21968C2C44E4440028B8FA /* ContentView.swift in Sources */,
+				7DC5CE362C6DAEC1008F06A6 /* StatisticView.swift in Sources */,
 				7D21968A2C44E4440028B8FA /* WBSeniorApp.swift in Sources */,
+				7D9353902C79F72F009A34FC /* MainModel.swift in Sources */,
+				7D93537E2C787092009A34FC /* MainView.swift in Sources */,
+				7D9353922C79F7E6009A34FC /* MarketingSpecialistData.swift in Sources */,
+				7D9353872C79F0B4009A34FC /* MainReducer.swift in Sources */,
+				7D93538D2C79F248009A34FC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +419,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,8 +447,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +483,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D9353762C77582D009A34FC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D9353772C77582D009A34FC /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D9353762C77582D009A34FC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		7D9353822C7876BE009A34FC /* Utils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Utils;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D21967E2C44E4440028B8FA /* Project object */;
 }
