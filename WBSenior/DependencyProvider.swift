@@ -79,8 +79,6 @@ class DependencyProvider {
     }
 }
 
-import SwiftUI
-
 class ViewModel: ObservableObject {
     private let storageService: StorageServiceProtocol
     
@@ -92,8 +90,6 @@ class ViewModel: ObservableObject {
         storageService.saveData()
     }
 }
-
-import SwiftUI
 
 struct TestView: View {
     @StateObject var viewModel = ViewModel()
