@@ -11,6 +11,8 @@
 		7D21968C2C44E4440028B8FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D21968B2C44E4440028B8FA /* ContentView.swift */; };
 		7D21968E2C44E44A0028B8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D21968D2C44E44A0028B8FA /* Assets.xcassets */; };
 		7D2196912C44E44A0028B8FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2196902C44E44A0028B8FA /* Preview Assets.xcassets */; };
+		7D9353A02C7B44F6009A34FC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93539F2C7B44F6009A34FC /* Data.swift */; };
+		7D9353A72C7B4751009A34FC /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9353A62C7B4751009A34FC /* DataView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		7D21968B2C44E4440028B8FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D21968D2C44E44A0028B8FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D2196902C44E44A0028B8FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D93539F2C7B44F6009A34FC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		7D9353A62C7B4751009A34FC /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		7D2196882C44E4440028B8FA /* WBSenior */ = {
 			isa = PBXGroup;
 			children = (
+				7D93539B2C7B4336009A34FC /* SwiftDataTest */,
 				7D2196892C44E4440028B8FA /* WBSeniorApp.swift */,
 				7D21968B2C44E4440028B8FA /* ContentView.swift */,
 				7D21968D2C44E44A0028B8FA /* Assets.xcassets */,
@@ -65,6 +70,31 @@
 				7D2196902C44E44A0028B8FA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7D93539B2C7B4336009A34FC /* SwiftDataTest */ = {
+			isa = PBXGroup;
+			children = (
+				7D93539D2C7B44B9009A34FC /* View */,
+				7D93539C2C7B44B1009A34FC /* Model */,
+			);
+			path = SwiftDataTest;
+			sourceTree = "<group>";
+		};
+		7D93539C2C7B44B1009A34FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D93539F2C7B44F6009A34FC /* Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D93539D2C7B44B9009A34FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D9353A62C7B4751009A34FC /* DataView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +113,8 @@
 			dependencies = (
 			);
 			name = WBSenior;
+			packageProductDependencies = (
+			);
 			productName = WBSenior;
 			productReference = 7D2196862C44E4440028B8FA /* WBSenior.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +143,8 @@
 				Base,
 			);
 			mainGroup = 7D21967D2C44E4440028B8FA;
+			packageReferences = (
+			);
 			productRefGroup = 7D2196872C44E4440028B8FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +172,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D21968C2C44E4440028B8FA /* ContentView.swift in Sources */,
+				7D9353A72C7B4751009A34FC /* DataView.swift in Sources */,
+				7D9353A02C7B44F6009A34FC /* Data.swift in Sources */,
 				7D21968A2C44E4440028B8FA /* WBSeniorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,7 +233,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
