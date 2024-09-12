@@ -3,14 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D1D5BEC2C930A340007CE76 /* RAMReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1D5BEB2C930A340007CE76 /* RAMReducer.swift */; };
+		7D1D5BF32C931D280007CE76 /* RickAndMortyAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 7D1D5BF22C931D280007CE76 /* RickAndMortyAPI */; };
+		7D1D5BF52C93237D0007CE76 /* Dota2TeamsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1D5BF42C93237D0007CE76 /* Dota2TeamsReducer.swift */; };
+		7D1D5BF82C9324490007CE76 /* Dota2TeamsAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 7D1D5BF72C9324490007CE76 /* Dota2TeamsAPI */; };
+		7D1D5BFA2C93309D0007CE76 /* SpaceXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1D5BF92C93309D0007CE76 /* SpaceXView.swift */; };
+		7D1D5BFC2C9330A90007CE76 /* SpaceXReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1D5BFB2C9330A90007CE76 /* SpaceXReducer.swift */; };
+		7D1D5BFF2C9331AB0007CE76 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 7D1D5BFE2C9331AB0007CE76 /* Apollo */; };
+		7D1D5C032C9333D40007CE76 /* GraphQL in Resources */ = {isa = PBXBuildFile; fileRef = 7D1D5C022C9333D40007CE76 /* GraphQL */; };
+		7D1D5C062C93348B0007CE76 /* SpaceXAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 7D1D5C052C93348B0007CE76 /* SpaceXAPI */; };
+		7D1D5C092C93352B0007CE76 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1D5C082C93352B0007CE76 /* NetworkService.swift */; };
 		7D21968A2C44E4440028B8FA /* WBSeniorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2196892C44E4440028B8FA /* WBSeniorApp.swift */; };
 		7D21968C2C44E4440028B8FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D21968B2C44E4440028B8FA /* ContentView.swift */; };
 		7D21968E2C44E44A0028B8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D21968D2C44E44A0028B8FA /* Assets.xcassets */; };
 		7D2196912C44E44A0028B8FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2196902C44E44A0028B8FA /* Preview Assets.xcassets */; };
+		7D31A5EA2C8B1559001783AD /* Dota2TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31A5E92C8B1559001783AD /* Dota2TeamsView.swift */; };
+		7D31A5F12C90544E001783AD /* RAMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31A5F02C90544E001783AD /* RAMView.swift */; };
 		7D9353702C7752C7009A34FC /* Аватарка профиля.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D93536A2C7752C6009A34FC /* Аватарка профиля.pdf */; };
 		7D9353712C7752C7009A34FC /* calendar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D93536B2C7752C6009A34FC /* calendar.pdf */; };
 		7D9353722C7752C7009A34FC /* settings.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D93536C2C7752C6009A34FC /* settings.pdf */; };
@@ -25,14 +37,25 @@
 		7D9353902C79F72F009A34FC /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93538F2C79F72F009A34FC /* MainModel.swift */; };
 		7D9353922C79F7E6009A34FC /* MarketingSpecialistData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9353912C79F7E6009A34FC /* MarketingSpecialistData.swift */; };
 		7DC5CE362C6DAEC1008F06A6 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC5CE352C6DAEC1008F06A6 /* StatisticView.swift */; };
+		7DED91432C9238D700332E81 /* StatisticReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DED91422C9238D700332E81 /* StatisticReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D1D5BEB2C930A340007CE76 /* RAMReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMReducer.swift; sourceTree = "<group>"; };
+		7D1D5BF12C931CE50007CE76 /* RickAndMortyAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RickAndMortyAPI; sourceTree = "<group>"; };
+		7D1D5BF42C93237D0007CE76 /* Dota2TeamsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dota2TeamsReducer.swift; sourceTree = "<group>"; };
+		7D1D5BF62C9323DB0007CE76 /* Dota2TeamsAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Dota2TeamsAPI; sourceTree = "<group>"; };
+		7D1D5BF92C93309D0007CE76 /* SpaceXView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXView.swift; sourceTree = "<group>"; };
+		7D1D5BFB2C9330A90007CE76 /* SpaceXReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXReducer.swift; sourceTree = "<group>"; };
+		7D1D5C022C9333D40007CE76 /* GraphQL */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GraphQL; path = WBSenior/GraphQL; sourceTree = SOURCE_ROOT; };
+		7D1D5C082C93352B0007CE76 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		7D2196862C44E4440028B8FA /* WBSenior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBSenior.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2196892C44E4440028B8FA /* WBSeniorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBSeniorApp.swift; sourceTree = "<group>"; };
 		7D21968B2C44E4440028B8FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D21968D2C44E44A0028B8FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D2196902C44E44A0028B8FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D31A5E92C8B1559001783AD /* Dota2TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dota2TeamsView.swift; sourceTree = "<group>"; };
+		7D31A5F02C90544E001783AD /* RAMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMView.swift; sourceTree = "<group>"; };
 		7D93536A2C7752C6009A34FC /* Аватарка профиля.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Аватарка профиля.pdf"; path = "../../../../Новая папка/Аватарка профиля.pdf"; sourceTree = "<group>"; };
 		7D93536B2C7752C6009A34FC /* calendar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = calendar.pdf; path = "../../../../Новая папка/calendar.pdf"; sourceTree = "<group>"; };
 		7D93536C2C7752C6009A34FC /* settings.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = settings.pdf; path = "../../../../Новая папка/settings.pdf"; sourceTree = "<group>"; };
@@ -46,6 +69,7 @@
 		7D93538F2C79F72F009A34FC /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		7D9353912C79F7E6009A34FC /* MarketingSpecialistData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketingSpecialistData.swift; sourceTree = "<group>"; };
 		7DC5CE352C6DAEC1008F06A6 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
+		7DED91422C9238D700332E81 /* StatisticReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +77,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D1D5BF82C9324490007CE76 /* Dota2TeamsAPI in Frameworks */,
 				7D9353832C7876BE009A34FC /* Utils in Frameworks */,
+				7D1D5BF32C931D280007CE76 /* RickAndMortyAPI in Frameworks */,
+				7D1D5BFF2C9331AB0007CE76 /* Apollo in Frameworks */,
 				7D9353782C77582D009A34FC /* ComposableArchitecture in Frameworks */,
+				7D1D5C062C93348B0007CE76 /* SpaceXAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D1D5C072C93350C0007CE76 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				7D1D5C082C93352B0007CE76 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
 		7D21967D2C44E4440028B8FA = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +118,7 @@
 		7D2196882C44E4440028B8FA /* WBSenior */ = {
 			isa = PBXGroup;
 			children = (
+				7D1D5C022C9333D40007CE76 /* GraphQL */,
 				7D2196892C44E4440028B8FA /* WBSeniorApp.swift */,
 				7D21968B2C44E4440028B8FA /* ContentView.swift */,
 				7D93538A2C79F209009A34FC /* Features */,
@@ -109,6 +146,8 @@
 		7D9353802C787459009A34FC /* Package */ = {
 			isa = PBXGroup;
 			children = (
+				7D1D5BF62C9323DB0007CE76 /* Dota2TeamsAPI */,
+				7D1D5BF12C931CE50007CE76 /* RickAndMortyAPI */,
 				7D93537F2C78743B009A34FC /* Utils */,
 			);
 			path = Package;
@@ -124,7 +163,6 @@
 		7D9353842C79F07E009A34FC /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				7D9353932C79F9FC009A34FC /* Networking */,
 				7D9353892C79F0F2009A34FC /* View */,
 				7D9353882C79F0E8009A34FC /* Store */,
 			);
@@ -134,6 +172,8 @@
 		7D9353852C79F08C009A34FC /* Statistic */ = {
 			isa = PBXGroup;
 			children = (
+				7D9353932C79F9FC009A34FC /* Networking */,
+				7DED91382C9237AD00332E81 /* Store */,
 				7D93538E2C79F271009A34FC /* View */,
 			);
 			path = Statistic;
@@ -160,6 +200,9 @@
 			children = (
 				7D9353842C79F07E009A34FC /* Main */,
 				7D9353852C79F08C009A34FC /* Statistic */,
+				7DED91392C9237BF00332E81 /* Dota2Teams */,
+				7DED913C2C92383000332E81 /* RickAndMorty */,
+				7DED913F2C92388300332E81 /* SpaceX */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -189,6 +232,90 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		7DED91382C9237AD00332E81 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				7DED91422C9238D700332E81 /* StatisticReducer.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		7DED91392C9237BF00332E81 /* Dota2Teams */ = {
+			isa = PBXGroup;
+			children = (
+				7DED913B2C92380200332E81 /* Store */,
+				7DED913A2C9237F800332E81 /* View */,
+			);
+			path = Dota2Teams;
+			sourceTree = "<group>";
+		};
+		7DED913A2C9237F800332E81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D31A5E92C8B1559001783AD /* Dota2TeamsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7DED913B2C92380200332E81 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				7D1D5BF42C93237D0007CE76 /* Dota2TeamsReducer.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		7DED913C2C92383000332E81 /* RickAndMorty */ = {
+			isa = PBXGroup;
+			children = (
+				7DED913E2C92386800332E81 /* Store */,
+				7DED913D2C92385F00332E81 /* View */,
+			);
+			path = RickAndMorty;
+			sourceTree = "<group>";
+		};
+		7DED913D2C92385F00332E81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D31A5F02C90544E001783AD /* RAMView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7DED913E2C92386800332E81 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				7D1D5BEB2C930A340007CE76 /* RAMReducer.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		7DED913F2C92388300332E81 /* SpaceX */ = {
+			isa = PBXGroup;
+			children = (
+				7D1D5C072C93350C0007CE76 /* NetworkService */,
+				7DED91412C92389C00332E81 /* Store */,
+				7DED91402C92389600332E81 /* View */,
+			);
+			path = SpaceX;
+			sourceTree = "<group>";
+		};
+		7DED91402C92389600332E81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D1D5BF92C93309D0007CE76 /* SpaceXView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7DED91412C92389C00332E81 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				7D1D5BFB2C9330A90007CE76 /* SpaceXReducer.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,6 +335,10 @@
 			packageProductDependencies = (
 				7D9353772C77582D009A34FC /* ComposableArchitecture */,
 				7D9353822C7876BE009A34FC /* Utils */,
+				7D1D5BF22C931D280007CE76 /* RickAndMortyAPI */,
+				7D1D5BF72C9324490007CE76 /* Dota2TeamsAPI */,
+				7D1D5BFE2C9331AB0007CE76 /* Apollo */,
+				7D1D5C052C93348B0007CE76 /* SpaceXAPI */,
 			);
 			productName = WBSenior;
 			productReference = 7D2196862C44E4440028B8FA /* WBSenior.app */;
@@ -239,6 +370,8 @@
 			mainGroup = 7D21967D2C44E4440028B8FA;
 			packageReferences = (
 				7D9353762C77582D009A34FC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				7D1D5BFD2C9331AB0007CE76 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				7D1D5C042C93348B0007CE76 /* XCLocalSwiftPackageReference "SpaceXAPI" */,
 			);
 			productRefGroup = 7D2196872C44E4440028B8FA /* Products */;
 			projectDirPath = "";
@@ -260,6 +393,7 @@
 				7D21968E2C44E44A0028B8FA /* Assets.xcassets in Resources */,
 				7D9353712C7752C7009A34FC /* calendar.pdf in Resources */,
 				7D9353702C7752C7009A34FC /* Аватарка профиля.pdf in Resources */,
+				7D1D5C032C9333D40007CE76 /* GraphQL in Resources */,
 				7D9353742C7752C7009A34FC /* graph.pdf in Resources */,
 				7D9353722C7752C7009A34FC /* settings.pdf in Resources */,
 			);
@@ -272,14 +406,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D31A5EA2C8B1559001783AD /* Dota2TeamsView.swift in Sources */,
 				7D21968C2C44E4440028B8FA /* ContentView.swift in Sources */,
+				7D1D5BEC2C930A340007CE76 /* RAMReducer.swift in Sources */,
 				7DC5CE362C6DAEC1008F06A6 /* StatisticView.swift in Sources */,
+				7DED91432C9238D700332E81 /* StatisticReducer.swift in Sources */,
 				7D21968A2C44E4440028B8FA /* WBSeniorApp.swift in Sources */,
 				7D9353902C79F72F009A34FC /* MainModel.swift in Sources */,
 				7D93537E2C787092009A34FC /* MainView.swift in Sources */,
+				7D1D5BF52C93237D0007CE76 /* Dota2TeamsReducer.swift in Sources */,
 				7D9353922C79F7E6009A34FC /* MarketingSpecialistData.swift in Sources */,
+				7D1D5C092C93352B0007CE76 /* NetworkService.swift in Sources */,
 				7D9353872C79F0B4009A34FC /* MainReducer.swift in Sources */,
+				7D1D5BFC2C9330A90007CE76 /* SpaceXReducer.swift in Sources */,
 				7D93538D2C79F248009A34FC /* Constants.swift in Sources */,
+				7D1D5BFA2C93309D0007CE76 /* SpaceXView.swift in Sources */,
+				7D31A5F12C90544E001783AD /* RAMView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,7 +626,22 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		7D1D5C042C93348B0007CE76 /* XCLocalSwiftPackageReference "SpaceXAPI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = SpaceXAPI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
+		7D1D5BFD2C9331AB0007CE76 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.15.1;
+			};
+		};
 		7D9353762C77582D009A34FC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
@@ -496,6 +653,23 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7D1D5BF22C931D280007CE76 /* RickAndMortyAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RickAndMortyAPI;
+		};
+		7D1D5BF72C9324490007CE76 /* Dota2TeamsAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Dota2TeamsAPI;
+		};
+		7D1D5BFE2C9331AB0007CE76 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D1D5BFD2C9331AB0007CE76 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		7D1D5C052C93348B0007CE76 /* SpaceXAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SpaceXAPI;
+		};
 		7D9353772C77582D009A34FC /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7D9353762C77582D009A34FC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;

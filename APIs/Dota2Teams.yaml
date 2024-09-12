@@ -1,0 +1,57 @@
+openapi: 3.0.0
+info:
+  title: OpenDota API
+  version: 1.0.0
+  description: API для получения информации о командах Dota 2.
+
+paths:
+  /teams:
+    get:
+      summary: Получение списка команд
+      description: Возвращает список команд Dota 2, включая их идентификатор, рейтинг, количество побед и поражений.
+      responses:
+        '200':
+          description: Успешный ответ, возвращает список команд.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    team_id:
+                      type: integer
+                      description: Идентификатор команды.
+                      example: 0
+                    rating:
+                      type: number
+                      description: Рейтинг команды.
+                      example: 2000
+                    wins:
+                      type: integer
+                      description: Количество побед команды.
+                      example: 100
+                    losses:
+                      type: integer
+                      description: Количество поражений команды.
+                      example: 50
+                    last_match_time:
+                      type: integer
+                      description: Время последнего матча (в формате UNIX timestamp).
+                      example: 1628000000
+                    name:
+                      type: string
+                      description: Название команды.
+                      example: "Newbee"
+                    tag:
+                      type: string
+                      description: Тег команды.
+                      example: "NB"
+                    logo_url:
+                      type: string
+                      description: URL логотипа команды.
+                      example: "https://example.com/logo.png"
+        '400':
+          description: Неверный запрос.
+        '500':
+          description: Ошибка сервера.

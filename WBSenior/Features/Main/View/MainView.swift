@@ -11,15 +11,13 @@ import SwiftUI
 import Utils
 
 struct MainView: View {
+    
     @Perception.Bindable
     var store: StoreOf<MainReducer>
     
     var body: some View {
         WithPerceptionTracking {
             contentView
-                .onAppear {
-                    store.send(.startLoad)
-                }
         }
     }
     
@@ -30,7 +28,6 @@ struct MainView: View {
                 tabbarView
                 middleView
                 Spacer()
-                sidebarView
             }
             .ignoresSafeArea()
         }
@@ -39,8 +36,29 @@ struct MainView: View {
     private var middleView: some View {
         Group {
             switch store.activeIndex {
-            case 0 :
-                StatisticView(store.marketingSpecialists)
+            case .graph :
+                StatisticView(
+                    store: Store(
+                        initialState: StatisticReducer.State(),
+                        reducer: { StatisticReducer() }
+                    )
+                )
+            case .chat :
+                Dota2TeamsView(
+                    store: Store(
+                        initialState: Dota2TeamsReducer.State(),
+                        reducer: { Dota2TeamsReducer() }
+                    )
+                )
+            case .hot:
+                RAMView(
+                    store: Store(
+                        initialState: RAMReducer.State(),
+                        reducer: { RAMReducer() }
+                    )
+                )
+            case .calendar:
+                SpaceXView()
             default:
                 noneView
             }
@@ -66,22 +84,6 @@ struct MainView: View {
             )
     }
     
-    private var sidebarView: some View {
-        CustomRectangle(44)
-            .opacity(0.8)
-            .frame(maxWidth: 320, maxHeight: .infinity)
-            .overlay(
-                Group {
-                    switch store.activeIndex {
-                    case 0 :
-                        sidebarOverlay
-                    default:
-                        noneView
-                    }
-                }
-            )
-    }
-    
     private var tabbarOverlay: some View {
         VStack {
             avatarView
@@ -100,42 +102,42 @@ struct MainView: View {
     }
     
     private var menuView: some View {
-        ForEach(0..<store.tabImages.count, id: \.self) { index in
+        ForEach(Tab.allCases) { index in
             menuButtons(index)
         }
     }
     
-    private func menuButtons(_ index: Int) -> some View {
+    private func menuButtons(_ tab: Tab) -> some View {
         VStack(spacing: 64) {
             Button {
-                handleMenuAction(for: index)
+                handleMenuAction(for: tab)
             } label: {
-                Image(store.tabImages[index])
+                Image(tab.rawValue)
                     .resizable()
                     .renderingMode(.original)
                     .foregroundStyle(.white)
                     .frame(width: 24, height: 24)
                     .background(
-                        menuButtonsBackgrond(index)
+                        menuButtonsBackgrond(tab)
                     )
                     .padding()
             }
         }
     }
     
-    private func handleMenuAction(for index: Int) {
-            switch index {
-            case 0: store.send(.graph)
-            case 1: store.send(.chat)
-            case 2: store.send(.hot)
-            case 3: store.send(.calendar)
-            default: store.send(.settings)
-            }
+    private func handleMenuAction(for tab: Tab) {
+        switch tab {
+        case .graph: store.send(.graph)
+        case .chat: store.send(.chat)
+        case .hot: store.send(.hot)
+        case .calendar: store.send(.calendar)
+        case .settings: store.send(.settings)
         }
+    }
     
-    private func menuButtonsBackgrond(_ index: Int) -> some View {
+    private func menuButtonsBackgrond(_ tab: Tab) -> some View {
         RoundedRectangle(cornerRadius: 16)
-            .fill(store.activeIndex == index ?
+            .fill(store.activeIndex == tab ?
                   AnyShapeStyle(LinearGradient(
                     gradient: Gradient(colors: Constants.imagesBackgroundColor),
                     startPoint: .topLeading,
@@ -156,143 +158,6 @@ struct MainView: View {
                     .frame(width: 48, height: 48)
             )
             .padding(.bottom, 32)
-    }
-    
-    private var sidebarOverlay: some View {
-        VStack(alignment: .leading, spacing: 20) {
-            Text("Движение тренда в 2024")
-                .font(.title3)
-                .foregroundStyle(.white)
-                .padding(
-                    EdgeInsets(
-                        top: 36,
-                        leading: 20,
-                        bottom: 20,
-                        trailing: .zero
-                    )
-                )
-            
-            Image("trendChart")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(height: 164)
-            
-            Text("Статистика за 09 месяц")
-                .font(.callout)
-                .foregroundStyle(.white)
-                .padding(
-                    EdgeInsets(
-                        top: .zero,
-                        leading: 20,
-                        bottom: -16,
-                        trailing: .zero
-                    )
-                )
-            
-            HStack {
-                VStack(alignment: .leading, spacing: 32) {
-                    gridElement(
-                        imageName: "wallet",
-                        text: "Цена",
-                        value: "869$",
-                        startFraction: 0.1,
-                        finishFraction: 0.75
-                        
-                    )
-                    gridElement(
-                        imageName: "cart",
-                        text: "Покупки",
-                        value: "22300",
-                        startFraction: 0.1,
-                        finishFraction: 0.95
-                    )
-                    
-                }
-                Spacer()
-                VStack(alignment: .leading, spacing: 32) {
-                    gridElement(
-                        imageName: "rocket",
-                        text: "Клики",
-                        value: "24%",
-                        startFraction: 0.1,
-                        finishFraction: 0.3
-                    )
-                    gridElement(
-                        imageName: "build",
-                        text: "Помощь",
-                        value: "1,2%",
-                        startFraction: 0.1,
-                        finishFraction: 0.13
-                    )
-                }
-            }
-            .padding(20)
-            
-            Text("Данные для связи")
-                .font(.callout)
-                .foregroundStyle(.white)
-                .padding(.leading, 20)
-            
-            ScrollView {
-                VStack(spacing: 4) {
-                    ForEach(0..<store.marketingSpecialists.count, id: \.self) { index in
-                        RoundedRectangle(cornerRadius: 16)
-                            .fill(.white).opacity(0.04)
-                            .frame(minWidth: 280, minHeight: 60)
-                            .overlay(
-                                HStack {
-                                    Image(store.marketingSpecialists[index].name)
-                                        .resizable()
-                                        .frame(width: 32, height: 32)
-                                    VStack(alignment: .leading, spacing: 4) {
-                                        Text(store.marketingSpecialists[index].name)
-                                            .font(.callout)
-                                            .foregroundStyle(.white)
-                                        Text(store.marketingSpecialists[index].nameCompany)
-                                            .font(.footnote)
-                                            .foregroundStyle(.gray)
-                                    }
-                                    Spacer()
-                                    Image(systemName: "chevron.right")
-                                        .foregroundStyle(.white)
-                                }
-                                .padding(12)
-                                
-                            )
-                        
-                    }
-                    .padding(.horizontal, 20)
-                    Spacer()
-                }
-            }
-        }
-    }
-    
-    private func gridElement(imageName: String, text: String, value: String, startFraction: CGFloat, finishFraction: CGFloat) -> some View {
-        HStack(spacing: 25) {
-            ZStack {
-                Circle()
-                    .stroke(.white.opacity(0.08), lineWidth: 5)
-                    .frame(width: 48, height: 48)
-                
-                Circle()
-                    .trim(from: startFraction, to: finishFraction)
-                    .stroke(.purple, lineWidth: 5)
-                    .frame(width: 48, height: 48)
-                
-                Image(imageName)
-                    .resizable()
-                    .frame(width: 20, height: 20)
-            }
-            VStack(alignment: .leading, spacing: 2) {
-                Text(text)
-                    .font(.footnote)
-                    .foregroundStyle(.gray)
-                Text(value)
-                    .font(.callout)
-                    .foregroundStyle(.white)
-            }
-        }
     }
     
     private var noneView: some View {

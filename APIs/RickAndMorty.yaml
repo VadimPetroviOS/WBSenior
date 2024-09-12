@@ -1,0 +1,151 @@
+openapi: 3.0.0
+info:
+  title: Rick and Morty API
+  version: 1.0.0
+  description: API для получения информации о персонажах из сериала "Rick and Morty".
+
+paths:
+  /character:
+    get:
+      summary: Получение списка персонажей
+      description: Возвращает список персонажей из сериала "Rick and Morty".
+      parameters:
+        - name: page
+          in: query
+          description: Номер страницы для пагинации (по умолчанию 1).
+          required: false
+          schema:
+            type: integer
+            example: 1
+        - name: name
+          in: query
+          description: Фильтровать персонажей по имени.
+          required: false
+          schema:
+            type: string
+            example: "Rick"
+        - name: status
+          in: query
+          description: Фильтровать персонажей по статусу (например, "alive", "dead", "unknown").
+          required: false
+          schema:
+            type: string
+            example: "alive"
+        - name: species
+          in: query
+          description: Фильтровать персонажей по виду (например, "Human", "Alien").
+          required: false
+          schema:
+            type: string
+            example: "Human"
+        - name: gender
+          in: query
+          description: Фильтровать персонажей по полу (например, "Male", "Female", "Genderless", "Unknown").
+          required: false
+          schema:
+            type: string
+            example: "Male"
+      responses:
+        '200':
+          description: Успешный ответ, возвращает список персонажей.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  info:
+                    type: object
+                    properties:
+                      count:
+                        type: integer
+                        description: Общее количество персонажей.
+                        example: 826
+                      pages:
+                        type: integer
+                        description: Общее количество страниц с персонажами.
+                        example: 42
+                      next:
+                        type: string
+                        description: URL следующей страницы с персонажами.
+                        example: "https://rickandmortyapi.com/api/character?page=2"
+                      prev:
+                        type: string
+                        description: URL предыдущей страницы с персонажами.
+                        example: null
+                  results:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          description: Идентификатор персонажа.
+                          example: 1
+                        name:
+                          type: string
+                          description: Имя персонажа.
+                          example: "Rick Sanchez"
+                        status:
+                          type: string
+                          description: Статус персонажа.
+                          example: "Alive"
+                        species:
+                          type: string
+                          description: Вид персонажа.
+                          example: "Human"
+                        type:
+                          type: string
+                          description: Тип персонажа (опционально).
+                          example: ""
+                        gender:
+                          type: string
+                          description: Пол персонажа.
+                          example: "Male"
+                        origin:
+                          type: object
+                          properties:
+                            name:
+                              type: string
+                              description: Название родного места персонажа.
+                              example: "Earth"
+                            url:
+                              type: string
+                              description: URL родного места персонажа.
+                              example: "https://rickandmortyapi.com/api/location/1"
+                        location:
+                          type: object
+                          properties:
+                            name:
+                              type: string
+                              description: Название текущего местоположения персонажа.
+                              example: "Earth"
+                            url:
+                              type: string
+                              description: URL текущего местоположения персонажа.
+                              example: "https://rickandmortyapi.com/api/location/20"
+                        image:
+                          type: string
+                          description: URL изображения персонажа.
+                          example: "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+                        episode:
+                          type: array
+                          items:
+                            type: string
+                            description: Список URL эпизодов, в которых появляется персонаж.
+                            example:
+                              - "https://rickandmortyapi.com/api/episode/1"
+                              - "https://rickandmortyapi.com/api/episode/2"
+                        url:
+                          type: string
+                          description: URL текущего персонажа в API.
+                          example: "https://rickandmortyapi.com/api/character/1"
+                        created:
+                          type: string
+                          format: date-time
+                          description: Дата и время создания записи персонажа.
+                          example: "2017-11-04T18:48:46.250Z"
+        '400':
+          description: Неверный запрос.
+        '500':
+          description: Ошибка сервера.
+
